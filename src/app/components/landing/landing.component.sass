@@ -1,0 +1,67 @@
+.main-content-container
+  background-color: #080708
+  margin: 0
+  padding: 0
+  height: 32rem
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+.main-text-container
+  margin: 0
+  padding: 0
+  margin-left: clamp(1rem, 20vw, 12rem)
+
+h1
+  font-family: "Inter ExtraBold", sans-serif
+  color:#EDD3C4
+  margin-bottom: 0.5rem
+
+h2
+  font-family: "Inter", sans-serif
+  color:#EDD3C4
+  margin-bottom: 0.5rem
+
+h3
+  font-family: "Inter Light", sans-serif
+  color:#EDD3C4
+
+button
+  font-family: "Inter Medium", sans-serif
+  color: #080708
+  background-color: #3B60E4
+  border: none
+  border-radius: 0.4rem
+  height: 2rem
+  width: 10rem
+  margin-top: 0.5rem
+  margin-bottom: 0.5rem
+
+button:hover
+  background-color: #7765E3
+
+.see-experience
+  font-family: "Inter Medium", sans-serif
+  color: #EDD3C4
+  cursor: pointer
+  text-decoration: none
+
+.see-experience:hover
+  color: #7765E3
+
+img
+  position: absolute
+  right: 12rem
+  width: 35rem
+  height: 35rem
+
+@media (max-width: 600px)
+  img
+    display: none
+
+@media (max-width: 1100px)
+  img
+    display: none
+  .main-content-container
+    justify-content: center
+    align-items: center

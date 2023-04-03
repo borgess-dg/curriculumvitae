@@ -1,0 +1,20 @@
+<div id="skills" class="skills-container">
+  <h2>Habilidades</h2>
+  <div class="input-container">
+    <div class="input-image-container">
+      <i class="bi bi-search"></i>
+    </div>
+    <input (keydown.enter)="onSearch($event)" placeholder="Digite aqui a habilidade desejada...">
+  </div>
+  <ul class="list-container">
+    <li class="skills-list" *ngFor="let skill of showSkills">
+      <div class="image-container">
+        <img class="skills-images" [src]="skill.image">
+      </div>
+      <div class="info-container">
+        <h4>{{ skill.language }}</h4>
+        <p>Nível: {{ skill.knowledge }}</p>
+      </div>
+    </li>
+  </ul>
+</div>
